@@ -3,12 +3,13 @@
     display: block;
     box-sizing: border-box;
     width: 700px;
-    height: 300px;
+    height: 600px;
     padding: 30px;
     margin: auto;
     font-weight: 600;
     font-family: sans-serif;
     background-color: aquamarine;
+    border-style: solid;
 }
 
 h1 {
