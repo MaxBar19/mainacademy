@@ -1,0 +1,40 @@
+.content {
+
+    display: block;
+    box-sizing: border-box;
+    width: 700px;
+    height: 300px;
+    padding: 30px;
+    margin: auto;
+    font-weight: 600;
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+
+h1 {
+
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+
+fieldset button {
+
+    float: right;
+    background-color: blue;
+    margin: 20px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.default input:checked ~ label{
+
+    color: red;
+}
+
+#id_description
+ {
+
+    height: 70px;
+}
