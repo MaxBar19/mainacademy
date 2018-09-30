@@ -1,0 +1,229 @@
+@import 'vars.less';
+@import 'our_works.less';
+@import 'footer.less';
+@import 'header.less';
+@import 'we_print.less';
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.slider {
+  img {
+    width: 100%;
+  }
+}
+
+.news h2 {
+  text-align: center;
+  font: 40px italic;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.news_content{
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-style: sans-serif;
+  justify-content: center;
+}
+
+.news h5 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.news p {
+  font-size: 87.5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.news time {
+  color: darkgray;
+}
+
+.images {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;  
+}
+ 
+.picture
+ {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.news_div {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+& > div {
+  margin-left: 300px;
+  display: block;
+}
+
+
+.slider div{
+  background-color: darkgray;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+
+.text {
+  text-align: center;
+}
+
+.news div h2 {
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#show_form {
+    display: none;
+
+    &:checked {
+      & + label {
+        background: url(images/icons/x@2x.png);
+        background-size: 100%;
+      }
+    }
+
+    & + label {
+      background: url(images/icons/search@2x.png) no-repeat;
+      background-size: 100%;
+      width: 31px;
+      height: 33px;
+      display: block;
+      cursor: pointer;
+
+    }
+    & ~ div {
+      display: block;
+      position: absolute;
+      background: #fff;
+      right: 0px;
+      top:100%;
+      border:solid 2px blue;
+      padding: 10px;
+      width: 400px;
+      white-space: nowrap;
+      
+      input, button {
+        display:inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      button {
+        width: 100px;
+        border: solid 1px green;
+
+      }
+
+      input {
+        width:calc(100% - 100px);
+        outline: none;
+      }
+    }
+
+  }
+
+  form {
+
+    div {
+      padding: 10px;
+    }
+    input[type= 'checkbox'], input[type= 'radio'] {
+      display: none;
+      & + label {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        box-sizing: border-box;
+
+
+      }
+    }
+
+    input[type='radio'] {
+      & + label {
+        &:checked {
+          display: block;
+        }
+        &::before { 
+          display: none;
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background-color: green;
+          border-radius: 5px;
+          top:4px;
+          left:4px;
+        }
+        &:after {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          border:solid 1px green;
+          content: '';
+        }
+        padding-left: 30px;
+      }
+
+      
+    }
+
+    input[type='checkbox'] {
+      &:checked {
+        display: block;
+      }
+      & + label {
+        &::before { 
+          display: none;
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background-color:yellow;
+          border-radius: 5px;
+          border-left: 1px solid red;
+          border-right: 1px solid red;
+        }
+        &:after {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          border:solid 1px yellow;
+          content: '';
+        }
+        padding-left: 30px;
+      }
+    }
+  }
