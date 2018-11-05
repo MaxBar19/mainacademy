@@ -52,7 +52,7 @@ console.log(concat_arr([1,2,3], [2,3,4]));
 */
 //_____lab4_____//
 /*
-var value = a => function(b){return a*b}
+var value = a => (b) => {return a*b}
 var mul = value(3);
 console.log(mul(4));
 */
@@ -68,8 +68,7 @@ console.log(length_count([1,2,3,4,5]));
 */
 //___lab1____//
 /*
-function object_creator(countries, population) {
-
+var object_creator = (countries,population) => {
 var pops_in_countries = {};
 
 for(var i = 0; i < countries.length; i++){
