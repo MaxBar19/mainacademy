@@ -1,10 +1,36 @@
-//_____lab4_____//
 
+
+
+//_____lab6_____//
+/*
+function unique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
+function concat_arr(a,b){
+    return a.concat(b);
+}
+var x = concat_arr([1,2,1,1,1,3], [2,2,2,3,5,1,1,2,3,4])
+
+console.log(x.filter(unique));
+*/
+//_____lab5_____//
+/*
+function concat_arr(a,b){
+    return a.concat(b);
+}
+function reverse_arr(a) {
+    return a.reverse();
+}
+console.log(reverse_arr([1,2,3]));
+*/
+//_____lab4_____//
+/*
 function value(a) {
     return function(b){return a*b}
 }
 var mul = value(3);
 console.log(mul(4));
+*/
 //_____lab3_____//
 /*
 function num_modifier(num) {
