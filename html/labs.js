@@ -65,14 +65,11 @@ var mul = value(3);
 console.log(mul(4));
 */
 //_____lab3_____//
-/*
-function num_modifier(num) {
-    if (num>10) return Math.pow(num, 2)
-    else if (num<7) return console.log("The number is lower than 7")
-    else if (num==8 || num==9) return num - 1
-}
+
+var num_modifier = num => num>10? Math.pow(num, 2) : num<7? console.log("The number is lower than 7") : num - 1
+
 console.log(num_modifier(11));
-*/
+
 //____lab2_____//
 
 var length_count = arr => arr == undefined? console.log("Wrong argument exception") : arr.length;
