@@ -39,43 +39,33 @@ console.log(average([1,-2,3,4,5,6,7]));
 function unique(value, index, self) { 
     return self.indexOf(value) === index;
 }
-function concat_arr(a,b){
-    return a.concat(b);
-}
+var concat_arr = (a, b) => a.concat(b);
 var x = concat_arr([1,2,1,1,1,3], [2,2,2,3,5,1,1,2,3,4])
 
 console.log(x.filter(unique));
 */
 //_____lab5_____//
 /*
-function concat_arr(a,b){
-    return a.concat(b);
-}
-function reverse_arr(a) {
-    return a.reverse();
-}
-console.log(reverse_arr([1,2,3]));
+var concat_arr = (a, b) => a.concat(b);
+var reverse_arr = a => a.reverse();
+console.log(concat_arr([1,2,3], [2,3,4]));
 */
 //_____lab4_____//
 /*
-function value(a) {
-    return function(b){return a*b}
-}
+var value = a => function(b){return a*b}
 var mul = value(3);
 console.log(mul(4));
 */
 //_____lab3_____//
-
+/*
 var num_modifier = num => num>10? Math.pow(num, 2) : num<7? console.log("The number is lower than 7") : num - 1
-
-console.log(num_modifier(11));
-
+console.log(num_modifier(8));
+*/
 //____lab2_____//
-
+/*
 var length_count = arr => arr == undefined? console.log("Wrong argument exception") : arr.length;
-
 console.log(length_count([1,2,3,4,5]));
-
+*/
 //___lab1____//
 /*
 function object_creator(countries, population) {
