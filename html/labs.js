@@ -1,4 +1,14 @@
+//_____lab8_____//
+/*
+function sorted(arr){
+    return arr.sort(function (a,b){
+        return a - b
+    })
+}
+console.log(sorted([0,125125,-123,23,23,1,1,1,23,4,5]))
+*/
 //_____lab7_____//
+/*
 function average(arr){
 sum = 0;
 for(var i = 0; i < arr.length; i++){
@@ -9,9 +19,8 @@ for(var i = 0; i < arr.length; i++){
 }
 return sum/arr.length
 }
-
 console.log(average([1,-2,3,4,5,6,7]));
-
+*/
 //_____lab6_____//
 /*
 function unique(value, index, self) { 
