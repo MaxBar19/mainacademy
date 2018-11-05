@@ -1,5 +1,16 @@
+//_____lab7_____//
+function average(arr){
+sum = 0;
+for(var i = 0; i < arr.length; i++){
+    sum+=arr[i]
+}
+for(var i = 0; i < arr.length; i++){
+    if(arr[i]<0) return console.log('Error');
+}
+return sum/arr.length
+}
 
-
+console.log(average([1,-2,3,4,5,6,7]));
 
 //_____lab6_____//
 /*
