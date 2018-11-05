@@ -1,3 +1,16 @@
+/*var arr = [[1,2,4,5],
+           [0,-1,3,8],
+           [0,2,4,1],
+           [3,8,9,10]]
+var sum=0;
+for(var i = 0; i < 4; i++){
+    for(var j = 0; j < 4; j++){
+        if(i == j && arr[i][j]>0) sum+=arr[i][j];
+    }
+}
+
+console.log(sum);
+*/
 //_____lab8_____//
 /*
 function sorted(arr){
@@ -61,13 +74,11 @@ function num_modifier(num) {
 console.log(num_modifier(11));
 */
 //____lab2_____//
-/*
-function length_count(arr) {
-    if(arr == undefined) console.log("Wrong argument exception")
-    else return arr.length;
-}
-console.log(length_count());
-*/
+
+var length_count = arr => arr == undefined? console.log("Wrong argument exception") : arr.length;
+
+console.log(length_count([1,2,3,4,5]));
+
 //___lab1____//
 /*
 function object_creator(countries, population) {
