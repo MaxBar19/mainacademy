@@ -3,11 +3,11 @@
 
 //_____lab11_____//
 
-var regex = /РАЗ-раз-раз-раз-раз/ig;
-
+var regex = /раз/ig;
+var i = 0;
 var str = "Раз-РАЗ-раз-рАз-рАЗ";
 
-var str_replace = str.replace(regex, '1-2-3-4-5');
+var str_replace = str.replace(regex, () => ++i);
 
 console.log(str_replace);
 
