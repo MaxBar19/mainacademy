@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 //_____lab12_____//
 
 
@@ -21,6 +22,8 @@ console.log(str.length + " " + str_arr);
 */
 //_______________________
 =======
+=======
+>>>>>>> e099147f39fa2aebe20199bdd23e057cd913b7a1
 //_____lab10_____//
 
 var str = "hello"
@@ -28,6 +31,9 @@ var str_arr = str.split("").reverse().join("");
 console.log(str.length + " " + str_arr);
 
 
+<<<<<<< HEAD
+>>>>>>> e099147f39fa2aebe20199bdd23e057cd913b7a1
+=======
 >>>>>>> e099147f39fa2aebe20199bdd23e057cd913b7a1
 /*var arr = [[1,2,4,5],
            [0,-1,3,8],
