@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //_____lab12_____//
 
 
@@ -19,6 +20,15 @@ var str_arr = str.split("").reverse().join("");
 console.log(str.length + " " + str_arr);
 */
 //_______________________
+=======
+//_____lab10_____//
+
+var str = "hello"
+var str_arr = str.split("").reverse().join("");
+console.log(str.length + " " + str_arr);
+
+
+>>>>>>> e099147f39fa2aebe20199bdd23e057cd913b7a1
 /*var arr = [[1,2,4,5],
            [0,-1,3,8],
            [0,2,4,1],
