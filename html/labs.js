@@ -1,10 +1,20 @@
-//_____lab10_____//
+//_____lab11_____//
 
+var regex = /РАЗ-РАЗ-РАЗ-РАЗ-РАЗ/ig;
+
+var str = "Раз-РАЗ-раз-рАз-рАЗ";
+
+var str_replace = str.replace(regex, '1-2-3-4-5');
+
+console.log(str_replace);
+
+//_____lab10_____//
+/*
 var str = "hello"
 var str_arr = str.split("").reverse().join("");
 console.log(str.length + " " + str_arr);
-
-
+*/
+//_______________________
 /*var arr = [[1,2,4,5],
            [0,-1,3,8],
            [0,2,4,1],
