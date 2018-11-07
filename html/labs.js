@@ -1,3 +1,10 @@
+//_____lab10_____//
+
+var str = "hello"
+var str_arr = str.split("").reverse().join("");
+console.log(str.length + " " + str_arr);
+
+
 /*var arr = [[1,2,4,5],
            [0,-1,3,8],
            [0,2,4,1],
