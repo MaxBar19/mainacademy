@@ -1,0 +1,65 @@
+#carousel_main {
+    position: absolute;
+    margin-top: 65px;
+  }
+  body .home-icon {
+    width: 40px;
+  }
+  body #carousel_main img {
+    position: relative;
+    opacity: 1;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 100%;
+    transition: .5s ease;
+  }
+  body #carousel_main .hover_div {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+  }
+  body #carousel_main .hover_div .text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .hover_div {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 375%);
+  }
+  .hover_div .text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  #carousel_main:hover img {
+    opacity: 0.9;
+  }
+  #carousel_main:hover .hover_div {
+    opacity: 0.5;
+  }
+  footer {
+    margin-top: 500px;
+    color: aliceblue;
+  }
+  footer .show_more {
+    text-align: center;
+  }
+  footer .col {
+    text-align: center;
+  }
+  .modal-content {
+    background-color: darkgray;
+    opacity: 0.8;
+  }
+  
