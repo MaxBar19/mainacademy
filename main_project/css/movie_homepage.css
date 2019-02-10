@@ -1,6 +1,5 @@
-#carousel_main {
-    position: absolute;
-    margin-top: 65px;
+body {
+    padding-top: 65px;
   }
   body .home-icon {
     width: 40px;
