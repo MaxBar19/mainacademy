@@ -6,6 +6,8 @@
  body {
     text-align: center;
     padding-top: 65px;
+    background-image: url("../images/interstellar_bg.jpg");
+    background-size: cover;
   }
   .home-icon {
     width: 40px;
