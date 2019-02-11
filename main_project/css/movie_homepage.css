@@ -64,4 +64,6 @@ body {
     background-color: darkgray;
     opacity: 0.8;
   }
-  
+  footer p{
+    color: black;
+  }
