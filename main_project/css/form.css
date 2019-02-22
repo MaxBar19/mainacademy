@@ -1,0 +1,7 @@
+.modal-content {
+    background-color: darkgray;
+    opacity: 1;
+  }
+  .modal-content .modal-group button{
+    background: #800000;
+  }

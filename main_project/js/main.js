@@ -1,17 +1,19 @@
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
+        //Loop
         loop:true,
+        //Navigation
         nav:true,
+        navText: ["<img class = 'float-left' src = '../main_project/images/left-arrow02.png'>","<img class = 'float-right' src = '../main_project/images/right-arrow02.png'>"],
+        //Items
         items:1,
-        autoplay:false,
+        //Autoplay
+        autoplay:true,
         autoplayTimeout:2000,
         autoplayHoverPause:true,
-        center: true
+        //Position
+        center: true,
+        //Animation
+        animateOut: 'fadeOut'
     })
   });
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[2000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})

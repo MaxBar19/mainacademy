@@ -15,7 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/search.css">
-
+  <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -45,6 +45,9 @@
   </header>
   <main>
     <!-- Page Content -->
+    <div class="container">
+
+    </div>
       <form class="search_form">
       <input type="hidden" name="i" value="tt3896198">
       <input type="hidden" name="apikey" value="51e470d0">
@@ -63,18 +66,18 @@
   
     </form>
   
-    <p>Search result: <span id="count"></span> page(s)</p>
+    <div class="container">
+        <p>Search result: <span id="count"></span> page(s)</p>
+    </div>
   
     <div class="content position-sticky">
     </div>
   
     <div class="pages hide">
       <span class="page prev disabled">Previous</span>
-      <span class="current">1</span>
+      <span class="current text-white">1</span>
       <span class="page next">Next</span>
     </div>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- /.container -->
   
   <!-- Modal -->
@@ -104,7 +107,6 @@
               <button id="button" class="btn btn-success" type="submit">Send</button>
               <div class="result">
                 <span id="answer"></span>
-                <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
               </div>
             </form>
           </div>
@@ -114,26 +116,15 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-light fixed-bottom">
-    <div class="container">
-<div class="footer-styles">
-    <div class="row">
-        <div class="col">
-          <p class="m-0 text-left text-dark">Copyright &copy; Your Website 2019</p>
-        </div>
-        <div class="col">
-          <p class = "text-right text-dark">place for sprite</p>
-        </div>
-      </div>
-</div>
-    </div>
-    <!-- /.container -->
-  </footer>
+<footer class="bg-light fixed-bottom">
+  <p class="m-0 text-center text-dark">Copyright &copy; Your Website 2019</p>
+</footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/search.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 

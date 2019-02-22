@@ -6,9 +6,15 @@
 
 
 body {
+	width: 100%;
 	padding-top: 65px;
-	background-image: url("../images/interstellar_bg.jpg");
-	background-size: cover;
+	padding-bottom: 80px;
+	background-image: url("../images/film.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
 }
 
 .home-icon{
@@ -48,7 +54,7 @@ select{
 }
 .content {
 	text-align: center;
-	color: aliceblue;
+	color: #e22b2b;
 	display: flex;
   flex-wrap: wrap;
 }
@@ -64,8 +70,15 @@ select{
 	display:none !important;
 }
 
-.pages {
+.pages span {
 	left: 50%;
+	background-color: white;
+}
+.pages .current{
+	background: none;
+}
+.pages span:hover {
+	cursor: pointer;
 }
 
 .page {
@@ -77,7 +90,7 @@ select{
 }
 
 .page.disabled {
-	color: #bebebe;
+	color: #bbbbbe;
 }
 img {
 	width: 200px;
@@ -116,9 +129,39 @@ a:hover {
 	text-align: center;
 	font-size: 20px;
 }
-footer{
-	position: relative;
+footer p{
+	padding: 20px 0 20px 0;
 }
-main{
-	padding-bottom: 100px;
+
+
+@media only screen and (max-width: 600px) {
+  .content {
+		align-items: center;
+  	justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.content .wrap {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.content {
+		display: flex;
+		flex-direction: row;
+	}
+	.content .wrap{
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.content {
+		display: flex;
+		flex-direction: row;
+	}
+	.content .wrap{
+		width: 30%;
+	}
 }

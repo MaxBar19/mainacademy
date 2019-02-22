@@ -4,10 +4,16 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-item/blob/master/LICENSE)
  */
  body {
+    width: 100%;
     text-align: center;
     padding-top: 65px;
     background-image: url("../images/interstellar_bg.jpg");
-    background-size: cover;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
   }
   .home-icon {
     width: 40px;
@@ -16,4 +22,31 @@
     background-color: darkgray;
     opacity: 0.8;
   }
-  
+  iframe{
+    margin: 0 auto;
+  }
+  footer p{
+    padding-top: 1000px;
+    padding: 20px 0 20px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    iframe{
+      width: 250px;
+      height: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    iframe{
+      width: 600px;
+      height: 400px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    iframe{
+      width: 850px;
+      height: 500px;
+    }
+  }
